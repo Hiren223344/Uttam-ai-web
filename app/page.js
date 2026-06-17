@@ -62,14 +62,14 @@ export default function Home() {
           className="animate-fade-in-up opacity-0 text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
           style={{ animationDelay: "0.4s" }}
         >
-          Stellar AI Lab builds evaluation-driven tools, safety practices, and learning resources for teams working with advanced AI.
+          Uttam builds evaluation-driven tools, safety practices, and learning resources for teams working with advanced AI.
         </p>
 
         <button
           className="animate-fade-in-up opacity-0 bg-black text-white px-8 py-3 rounded-full text-base font-medium hover:bg-gray-800 transition-colors mb-12"
           style={{ animationDelay: "0.5s" }}
         >
-          Explore Lab Work
+          Explore Uttam
         </button>
 
         <TabBar activeTab={activeTab} setActiveTab={setActiveTab} />
@@ -89,9 +89,9 @@ function Navigation() {
       style={{ animationDelay: "0.1s" }}
       aria-label="Main navigation"
     >
-      <a href="#" className="flex items-center gap-2 text-lg font-semibold" aria-label="Stellar AI Lab home">
+      <a href="#" className="flex items-center gap-2 text-lg font-semibold" aria-label="Uttam home">
         <Star className="w-5 h-5 fill-black" />
-        <span>Stellar AI Lab</span>
+        <span>Uttam</span>
       </a>
 
       <div className="hidden md:flex items-center gap-8">
@@ -111,7 +111,7 @@ function Navigation() {
           href="#start"
           className="bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
         >
-          Explore lab
+          Explore Uttam
         </a>
       </div>
     </nav>
@@ -330,7 +330,7 @@ function NewsSection() {
         <div className="mb-12 grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-end">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-gray-500">Section 2 · News</p>
-            <h2 className="text-4xl font-normal tracking-tight text-black md:text-5xl">Latest from the AI lab</h2>
+            <h2 className="text-4xl font-normal tracking-tight text-black md:text-5xl">Latest from Uttam</h2>
           </div>
           <p className="max-w-2xl text-lg leading-8 text-gray-600 md:justify-self-end">
             These are lab-owned update categories and evergreen research topics, not fabricated press releases or dated announcements.
@@ -374,7 +374,7 @@ function Footer() {
           <div>
             <div className="mb-4 flex items-center gap-2 text-xl font-semibold">
               <Star className="h-5 w-5 fill-white" />
-              Stellar AI Lab
+              Uttam
             </div>
             <p className="max-w-md leading-7 text-gray-400">
               An AI lab focused on research, safe deployment, and practical learning resources.
@@ -396,7 +396,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Stellar AI Lab. Research, safety, and responsible AI products.</p>
+          <p>© 2026 Uttam. Research, safety, and responsible AI products.</p>
           <div className="flex gap-5">
             <a href="#" className="hover:text-white">Privacy</a>
             <a href="#" className="hover:text-white">Terms</a>
