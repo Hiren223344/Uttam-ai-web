@@ -368,26 +368,26 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-black px-6 py-16 text-white">
+    <footer className="bg-white px-6 py-16 text-gray-900 border-t border-gray-100">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-14 grid gap-10 md:grid-cols-[1.2fr_1.8fr]">
+        <div className="mb-8 grid gap-10 md:grid-cols-[1.2fr_1.8fr] md:items-start">
           <div>
             <div className="mb-4 flex items-center gap-2 text-xl font-semibold">
-              <Star className="h-5 w-5 fill-white" />
+              <Star className="h-5 w-5 fill-black" />
               Uttam
             </div>
-            <p className="max-w-md leading-7 text-gray-400">
+            <p className="max-w-md leading-7 text-gray-600">
               An AI lab focused on research, safe deployment, and practical learning resources.
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-3">
             {columns.map((column) => (
               <div key={column.title}>
-                <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">{column.title}</h3>
-                <ul className="space-y-3 text-sm text-gray-300">
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gray-700">{column.title}</h3>
+                <ul className="space-y-3 text-sm text-gray-600">
                   {column.links.map((link) => (
                     <li key={link}>
-                      <a href="#" className="transition-colors hover:text-white">{link}</a>
+                      <a href="#" className="transition-colors hover:text-gray-900">{link}</a>
                     </li>
                   ))}
                 </ul>
@@ -395,12 +395,22 @@ function Footer() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between">
+
+        <div className="flex justify-center mb-6">
+          <a
+            href="/news"
+            className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            Read all news
+          </a>
+        </div>
+
+        <div className="flex flex-col gap-4 border-t border-gray-200 pt-6 text-sm text-gray-600 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Uttam. Research, safety, and responsible AI products.</p>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-white">Terms</a>
-            <a href="#" className="hover:text-white">Status</a>
+            <a href="#" className="hover:text-gray-900">Privacy</a>
+            <a href="#" className="hover:text-gray-900">Terms</a>
+            <a href="#" className="hover:text-gray-900">Status</a>
           </div>
         </div>
       </div>
