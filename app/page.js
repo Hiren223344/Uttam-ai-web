@@ -81,7 +81,6 @@ export default function Home() {
     </main>
   );
 }
-
 function Navigation() {
   return (
     <nav
@@ -89,34 +88,31 @@ function Navigation() {
       style={{ animationDelay: "0.1s" }}
       aria-label="Main navigation"
     >
-      <a href="#" className="flex items-center gap-2 text-lg font-semibold" aria-label="Uttam home">
+      <a href="/" className="flex items-center gap-2 text-lg font-semibold" aria-label="Uttam home">
         <Star className="w-5 h-5 fill-black" />
         <span>Uttam</span>
       </a>
 
       <div className="hidden md:flex items-center gap-8">
-        <a href="#solutions" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">
+        <a href="/research" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">
           Research <ChevronDown className="h-4 w-4" />
         </a>
-        <a href="#teams" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">
+        <a href="#" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">
           Safety <ChevronDown className="h-4 w-4" />
         </a>
-        <a href="#about" className="text-sm text-gray-700 hover:text-black">Products</a>
-        <a href="#learn" className="text-sm text-gray-700 hover:text-black">Learn Hub</a>
+        <a href="/products" className="text-sm text-gray-700 hover:text-black">Products</a>
+        <a href="/news" className="text-sm text-gray-700 hover:text-black">Learn Hub</a>
       </div>
 
       <div className="flex items-center gap-5">
         <a href="#contact" className="hidden sm:inline text-sm text-gray-700 hover:text-black">Contact</a>
-        <a
-          href="#start"
-          className="bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
-        >
+        <a href="#start" className="bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
           Explore Uttam
         </a>
       </div>
     </nav>
   );
-}
+        }
 
 function TabBar({ activeTab, setActiveTab }) {
   return (
