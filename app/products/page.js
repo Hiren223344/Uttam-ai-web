@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Star, ChevronDown, Brain, Search, Plug, Zap } from "lucide-react";
+import { ChevronDown, Brain, Search, Plug, Zap } from "lucide-react";
 
 function Navigation() {
   return (
     <nav className="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto border-b border-gray-100">
       <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
-        <Star className="w-5 h-5 fill-black" />
+        <img src="/image.png" alt="Uttam" className="w-6 h-6 object-contain" />
         <span>Uttam</span>
       </Link>
       <div className="hidden md:flex items-center gap-8">
@@ -41,7 +41,7 @@ function Footer() {
         <div className="mb-8 grid gap-10 md:grid-cols-[1.2fr_1.8fr] md:items-start">
           <div>
             <div className="mb-4 flex items-center gap-2 text-xl font-semibold">
-              <Star className="h-5 w-5 fill-black" />
+              <img src="/image.png" alt="Uttam" className="w-6 h-6 object-contain" />
               Uttam
             </div>
             <p className="max-w-md leading-7 text-gray-600">
