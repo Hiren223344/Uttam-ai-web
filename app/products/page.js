@@ -137,7 +137,7 @@ export default function ProductsPage() {
               </code>
             </div>
 
-            
+            <a
               href="https://npmjs.com/package/uttam-code"
               className="inline-flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
             >
