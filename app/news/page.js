@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Star } from "lucide-react";
+import { Star, ChevronDown } from "lucide-react";
 import updates from "./data";
 
 function formatDate(dateStr) {
