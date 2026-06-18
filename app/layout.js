@@ -1,8 +1,11 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Stellar AI Lab",
+  title: "Uttam",
   description: "AI lab research, safety practices, and responsible product updates.",
+  icons: {
+    icon: "/image.png",
+  },
 };
 
 export default function RootLayout({ children }) {
