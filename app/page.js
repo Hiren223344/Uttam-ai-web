@@ -112,7 +112,8 @@ function Navigation() {
       </div>
     </nav>
   );
-        }
+}
+        
 
 function TabBar({ activeTab, setActiveTab }) {
   return (
@@ -383,7 +384,8 @@ function Footer() {
                 <ul className="space-y-3 text-sm text-gray-600">
                   {column.links.map((link) => (
                     <li key={link}>
-                      <a href="#" className="transition-colors hover:text-gray-900">{link}</a>
+                      {/* Redirect "About the lab" footer link to /about to avoid 404 */}
+                      <a href={link === "About the lab" ? "/about" : "#"} className="transition-colors hover:text-gray-900">{link}</a>
                     </li>
                   ))}
                 </ul>
@@ -413,3 +415,4 @@ function Footer() {
     </footer>
   );
 }
+
