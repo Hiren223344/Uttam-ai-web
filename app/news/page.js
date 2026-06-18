@@ -10,7 +10,7 @@ function formatDate(dateStr) {
   });
 }
 
-function Navigation() {
+ function Navigation() {
   return (
     <nav className="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto border-b border-gray-100">
       <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
@@ -19,10 +19,14 @@ function Navigation() {
       </Link>
 
       <div className="hidden md:flex items-center gap-8">
-        <Link href="#" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">Research</Link>
-        <Link href="#" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">Safety</Link>
-        <Link href="#" className="text-sm text-gray-700 hover:text-black">Products</Link>
-        <Link href="#" className="text-sm text-gray-700 hover:text-black">Learn Hub</Link>
+        <Link href="/research" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">
+          Research <ChevronDown className="h-4 w-4" />
+        </Link>
+        <Link href="#" className="flex items-center gap-1 text-sm text-gray-700 hover:text-black">
+          Safety <ChevronDown className="h-4 w-4" />
+        </Link>
+        <Link href="/products" className="text-sm text-gray-700 hover:text-black">Products</Link>
+        <Link href="/news" className="text-sm font-medium text-black">Learn Hub</Link>
       </div>
 
       <div className="flex items-center gap-5">
@@ -33,8 +37,7 @@ function Navigation() {
       </div>
     </nav>
   );
-}
-
+    }
 function Footer() {
   const columns = [
     { title: "Research", links: ["Alignment studies", "Model evaluations", "Safety cases", "Lab notes"] },
